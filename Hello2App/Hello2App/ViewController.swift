@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Text: UITextField!
     
     @IBOutlet weak var displaylabel: UILabel!
-    
+            
     
     
     
@@ -26,7 +26,13 @@ class ViewController: UIViewController {
         //! it is nothing but unwrapping the text
         var name = Text.text!
         //assign data(enter your name) to the display label.
-        displaylabel.text = "Hello \(name) !";
+        
+        
+        if(name.count>=4){
+            var fourChar = name[name.startIndex..<name.index(name.startIndex, offsetBy: 4)]
+            displaylabel.text = " \(fourChar) ";
+        }
+       
         
     }
     
