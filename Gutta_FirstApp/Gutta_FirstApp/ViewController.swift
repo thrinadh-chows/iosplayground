@@ -26,6 +26,10 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var details: UILabel!
+    
+    
+    
     @IBAction func onClickOfSubmit(_ sender: UIButton) {
         
         var first = firstNameTextField.text!
@@ -35,6 +39,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onClickOfReset(_ sender: UIButton) {
+        
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
+        fullNameLabel.text = ""
+        initialsLabel.text = ""
+        details.text = ""
+        firstNameTextField.becomeFirstResponder()
+        
     }
     
 }

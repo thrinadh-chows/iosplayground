@@ -91,6 +91,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="details" destination="5UF-kk-7pb" id="bmS-jS-1Se"/>
                         <outlet property="firstNameTextField" destination="KTA-Me-eML" id="1ZR-oM-3Ig"/>
                         <outlet property="fullNameLabel" destination="6n2-Hb-dWv" id="Ns3-Q2-C8V"/>
                         <outlet property="initialsLabel" destination="hgr-vG-lwO" id="2Yz-IK-fa0"/>
