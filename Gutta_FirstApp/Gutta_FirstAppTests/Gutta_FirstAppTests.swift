@@ -2,13 +2,13 @@
 //  Gutta_FirstAppTests.swift
 //  Gutta_FirstAppTests
 //
-//  Created by Gutta,Thrinadh Chowdary on 9/8/22.
+//  Created by Gutta,Thrinadh Chowdary on 9/13/22.
 //
 
 import XCTest
 @testable import Gutta_FirstApp
 
-class Gutta_FirstAppTests: XCTestCase {
+final class Gutta_FirstAppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

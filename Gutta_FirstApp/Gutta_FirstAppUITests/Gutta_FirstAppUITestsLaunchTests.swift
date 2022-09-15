@@ -2,12 +2,12 @@
 //  Gutta_FirstAppUITestsLaunchTests.swift
 //  Gutta_FirstAppUITests
 //
-//  Created by Gutta,Thrinadh Chowdary on 9/8/22.
+//  Created by Gutta,Thrinadh Chowdary on 9/13/22.
 //
 
 import XCTest
 
-class Gutta_FirstAppUITestsLaunchTests: XCTestCase {
+final class Gutta_FirstAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
