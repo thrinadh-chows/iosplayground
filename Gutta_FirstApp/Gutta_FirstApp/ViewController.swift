@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+initialsLabel.text = "zzzzex, offsetBy: 0)])\(last[last.index(last.startIndex, offsetBy: 0)])"
     }
-
-
+    
+    @IBAction func onClickOfReset(_ sender: UIButton) {
+    }
+    
 }
 
