@@ -40,10 +40,7 @@ class ViewController: UIViewController {
         
         // Display the first course (0th index)details
         
-        displayImage.image = UIImage(named: courses[0][0])
-        crsNumberOutlet.text = courses[0][1]
-        crsTitleOutlet.text = courses[0][2]
-        semOfferedOutlet.text = courses[0][3]
+        updateDetails(imageNum)
         
         //prvious buton is disabled
         
@@ -57,10 +54,7 @@ class ViewController: UIViewController {
         
        imageNum -= 1
         
-        displayImage.image = UIImage(named: courses[imageNum ][0])
-        crsNumberOutlet.text = courses[imageNum ][1]
-        crsTitleOutlet.text = courses[imageNum ][2]
-        semOfferedOutlet.text = courses[imageNum ][3]
+        updateDetails(imageNum)
         
         //prvious buton is disabled
         
@@ -83,10 +77,7 @@ class ViewController: UIViewController {
         //the details of first course should be displayed
         
         imageNum += 1
-        displayImage.image = UIImage(named: courses[imageNum][0])
-        crsNumberOutlet.text = courses[imageNum][1]
-        crsTitleOutlet.text = courses[imageNum][2]
-        semOfferedOutlet.text = courses[imageNum][3]
+       updateDetails(imageNum)
         
         //prvious buton is disabled
         
@@ -98,7 +89,19 @@ class ViewController: UIViewController {
             //next button should be disabled
             nextButtonOutlet.isEnabled = false
         }
+        
+        
 
+    }
+    
+    func updateDetails(_ imageNum:Int){
+        
+        displayImage.image = UIImage(named: courses[imageNum][0])
+        crsNumberOutlet.text = courses[imageNum][1]
+        crsTitleOutlet.text = courses[imageNum][2]
+        semOfferedOutlet.text = courses[imageNum][3]
+        
+        
     }
     
     
