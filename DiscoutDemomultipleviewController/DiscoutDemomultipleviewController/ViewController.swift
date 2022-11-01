@@ -30,6 +30,9 @@ class ViewController: UIViewController {
         var amount = Double(amountOutlet.text!)
         var DiscRate = Double(discountRateOutlet.text!)
         priceAfterDiscount = amount! - (amount!*DiscRate! / 100)
+        
+      
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,6 +43,9 @@ class ViewController: UIViewController {
             destination.amountA = amountOutlet.text!
             destination.discRateD = discountRateOutlet.text!
             destination.resultR = String(priceAfterDiscount)
+            
+            amountOutlet.text! = ""
+            discountRateOutlet.text! = ""
         }
     }
 
